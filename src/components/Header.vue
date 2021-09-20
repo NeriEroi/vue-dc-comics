@@ -104,10 +104,11 @@ export default {
                 font-weight: 600;
                 margin-right: 20px;
                 text-decoration: none;
-                color: $primary;
+                color: black;
                 padding-bottom: 50px;
 
                 &.active {
+                    color: $primary;
                     border-bottom: 5px solid $primary;
                 }
             }
