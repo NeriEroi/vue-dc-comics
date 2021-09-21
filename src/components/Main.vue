@@ -61,32 +61,35 @@ export default {
     @import "../style/vars";
 
     main {
-        height: 300px;
+        width: 100%;
+        height: 150px;
         background-color: red;
         .main_top {
+            width: 100%;
             height: 150px;
             background-color: black;
             h1 {
+                width: 50%;
                 color: white;
                 font-size: 25px;
                 padding: 50px;
-                margin-left: 50px;
             }
         }
         .main_bottom {
+            width: 100%;
             height: 150px;
             background-color: $primary;
             display: flex;
             justify-content: center;
             align-items: center;
             ul {
+                width: 80%;
                 list-style: none;
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
 
                 li {
-                    width: 280px;
                     height: 50px;
                 }
                 li .img_text_cont {
@@ -95,7 +98,11 @@ export default {
                 }
                 li .img_text_cont .img_cont {
                     width: 55px;
-                    height: 60px;
+                    height: 58px;
+                }
+                li:nth-of-type(4) .img_text_cont .img_cont {
+                    width: 45px;
+                    height: 65px;
                 }
                 li .img_text_cont .img_cont img {
                     width: 100%;

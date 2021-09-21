@@ -83,13 +83,12 @@ export default {
     @import "../style/vars";
 
     header {
-        height: 150px;
+        height: 120px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         .logo_cont {
             width: 70px;
-            height: 70px;
             margin-left: 50px;
             img {
                 width: 100%;
@@ -97,6 +96,7 @@ export default {
             }
         }
         ul {
+            height: 100%;
             display: flex;
             list-style: none;
             li {
@@ -105,7 +105,6 @@ export default {
                 margin-right: 20px;
                 text-decoration: none;
                 color: black;
-                padding-bottom: 50px;
 
                 &.active {
                     color: $primary;
