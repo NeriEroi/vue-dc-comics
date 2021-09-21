@@ -77,8 +77,12 @@ export default {
         background-color: red;
         .main_top {
             width: 100%;
-            height: 150px;
+            height: 500px;
             background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
             h1 {
                 width: 50%;
                 color: white;
