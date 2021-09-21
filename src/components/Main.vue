@@ -1,7 +1,11 @@
 <template>
   <main>
       <div class="main_top">
-          <h1> - - > Content goes here > - -</h1>
+            <Fumetti 
+                v-for="singleJason in dataJason" 
+                :key="singleJason.series" 
+                :item="singleJason" 
+            />    
       </div>
 
       <div class="main_bottom">
@@ -23,11 +27,17 @@
 </template>
 
 <script>
+import Fumetti from '@/components/Fumetti.vue'
+import MyJson from '@/assets/data/dc-comics.json'
+
 export default {
   name: 'Main',
-
+    components: {
+        Fumetti,
+    },
   data() {
       return {
+          dataJason: MyJson,
           links: [
               {
                   text: "DIGITAL COMICS",
@@ -49,10 +59,11 @@ export default {
                   text: "DC POWER VISA",
                   image: "assets/img/buy-dc-power-visa.svg",
               },
-            ]
+            ],
         }
     }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
