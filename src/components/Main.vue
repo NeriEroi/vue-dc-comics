@@ -2,10 +2,10 @@
   <main>
       <div class="main_top">
             <Fumetti 
-                v-for="singleJason in dataJason" 
-                :key="singleJason.series" 
+                v-for="(singleJason, index) in dataJason" 
+                :key="index" 
                 :item="singleJason" 
-            />    
+            />   
       </div>
 
       <div class="main_bottom">

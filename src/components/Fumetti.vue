@@ -1,4 +1,5 @@
 <template>
+
     <div>
         
         <div class="all_item">
@@ -10,8 +11,9 @@
             </h4>
         </div>
 
-        
     </div>
+
+    
 </template>
 
 <script>
@@ -40,6 +42,8 @@ export default {
     h4 {
         width: 150px;
         color: white;
-    }
+    } 
+
+  
    
 </style>
